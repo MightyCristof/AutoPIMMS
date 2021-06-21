@@ -1,2 +1,2 @@
 # AutoPIMMS
-Web scrapper and upload tool for WebPIMMS.
+Web scraper and upload tool for WebPIMMS.
