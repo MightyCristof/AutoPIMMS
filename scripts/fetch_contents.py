@@ -2,7 +2,7 @@ import mechanicalsoup
 
 ## dummy class for testing
 class Params:
-    From = "Flux"
+    bad_from = "Flux"
     sat = "FLUX"
     dummy = "Examples+of+Common+FLUX+Input%2FOutput+Ranges"
     range = "2-7"
