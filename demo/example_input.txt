@@ -1,49 +1,49 @@
-conv_from  conv_to  inptut_e  input_unit  output_e  output_unit  flux_count_ratio  gal_nh  model_src  phot_ind  
-     flux     flux     0.5-7         kev      2-10          kev                 1    2e20         pl       1.4
-     flux     flux       2-7         kev      2-10          kev                 1    2e20         pl       1.4
-     flux     flux     1.2-2         kev      2-10          kev                 1    2e20         pl       1.4
-     flux     flux   0.5-1.2         kev      2-10          kev                 1    2e20         pl       1.4
-     flux     flux   0.2-0.5         kev      2-10          kev                 1    2e20         pl       1.4
-     flux     flux    0.1-10         kev      2-10          kev                 1    2e20         pl       1.4
-     flux     flux     0.5-7         kev      2-10          kev                 1    2e20         pl       1.8
-     flux     flux       2-7         kev      2-10          kev                 1    2e20         pl       1.8
-     flux     flux     1.2-2         kev      2-10          kev                 1    2e20         pl       1.8
-     flux     flux   0.5-1.2         kev      2-10          kev                 1    2e20         pl       1.8
-     flux     flux   0.2-0.5         kev      2-10          kev                 1    2e20         pl       1.8
-     flux     flux    0.1-10         kev      2-10          kev                 1    2e20         pl       1.8
-     flux     flux     0.5-7         kev      2-10          kev                 1    2e20         pl       2.0
-     flux     flux       2-7         kev      2-10          kev                 1    2e20         pl       2.0
-     flux     flux     1.2-2         kev      2-10          kev                 1    2e20         pl       2.0
-     flux     flux   0.5-1.2         kev      2-10          kev                 1    2e20         pl       2.0
-     flux     flux   0.2-0.5         kev      2-10          kev                 1    2e20         pl       2.0
-     flux     flux    0.1-10         kev      2-10          kev                 1    2e20         pl       2.0
-     flux     flux   0.2-0.5         kev      2-10          kev                 1    2e20         pl       1.4
-     flux     flux     0.5-1         kev      2-10          kev                 1    2e20         pl       1.4
-     flux     flux       1-2         kev      2-10          kev                 1    2e20         pl       1.4
-     flux     flux     2-4.5         kev      2-10          kev                 1    2e20         pl       1.4
-     flux     flux    4.5-12         kev      2-10          kev                 1    2e20         pl       1.4
-     flux     flux    0.2-12         kev      2-10          kev                 1    2e20         pl       1.4
-     flux     flux   0.5-4.5         kev      2-10          kev                 1    2e20         pl       1.4
-     flux     flux   0.2-0.5         kev      2-10          kev                 1    2e20         pl       1.8
-     flux     flux     0.5-1         kev      2-10          kev                 1    2e20         pl       1.8
-     flux     flux       1-2         kev      2-10          kev                 1    2e20         pl       1.8
-     flux     flux     2-4.5         kev      2-10          kev                 1    2e20         pl       1.8
-     flux     flux    4.5-12         kev      2-10          kev                 1    2e20         pl       1.8
-     flux     flux    0.2-12         kev      2-10          kev                 1    2e20         pl       1.8
-     flux     flux   0.5-4.5         kev      2-10          kev                 1    2e20         pl       1.8
-     flux     flux   0.2-0.5         kev      2-10          kev                 1    2e20         pl       2.0
-     flux     flux     0.5-1         kev      2-10          kev                 1    2e20         pl       2.0
-     flux     flux       1-2         kev      2-10          kev                 1    2e20         pl       2.0
-     flux     flux     2-4.5         kev      2-10          kev                 1    2e20         pl       2.0
-     flux     flux    4.5-12         kev      2-10          kev                 1    2e20         pl       2.0
-     flux     flux    0.2-12         kev      2-10          kev                 1    2e20         pl       2.0
-     flux     flux   0.5-4.5         kev      2-10          kev                 1    2e20         pl       2.0
-     flux     flux       3-8         kev      2-10          kev                 1    2e20         pl       1.4
-     flux     flux      8-24         kev      2-10          kev                 1    2e20         pl       1.4
-     flux     flux      3-24         kev      2-10          kev                 1    2e20         pl       1.4
-     flux     flux       3-8         kev      2-10          kev                 1    2e20         pl       1.8
-     flux     flux      8-24         kev      2-10          kev                 1    2e20         pl       1.8
-     flux     flux      3-24         kev      2-10          kev                 1    2e20         pl       1.8
-     flux     flux       3-8         kev      2-10          kev                 1    2e20         pl       2.0
-     flux     flux      8-24         kev      2-10          kev                 1    2e20         pl       2.0
-     flux     flux      3-24         kev      2-10          kev                 1    2e20         pl       2.0
+conv_from  conv_to  inptut_energy  input_unit  output_energy  output_unit  flux_count_ratio  gal_nh  model_src  phot_ind  redshift  intrinsic_nh  bb_temp_kev  temp_kev  solar_abd  logt  frame_time
+     flux     flux          0.5-7         kev           2-10          kev                 1    2e20         pl       1.4       0.0          0e00     4.974e-4  2.353e-7        1.0  5.60         3.2
+     flux     flux            2-7         kev           2-10          kev                 1    2e20         pl       1.4       0.0          0e00     4.974e-4  2.353e-7        1.0  5.60         3.2
+     flux     flux          1.2-2         kev           2-10          kev                 1    2e20         pl       1.4       0.0          0e00     4.974e-4  2.353e-7        1.0  5.60         3.2
+     flux     flux        0.5-1.2         kev           2-10          kev                 1    2e20         pl       1.4       0.0          0e00     4.974e-4  2.353e-7        1.0  5.60         3.2
+     flux     flux        0.2-0.5         kev           2-10          kev                 1    2e20         pl       1.4       0.0          0e00     4.974e-4  2.353e-7        1.0  5.60         3.2
+     flux     flux         0.1-10         kev           2-10          kev                 1    2e20         pl       1.4       0.0          0e00     4.974e-4  2.353e-7        1.0  5.60         3.2
+     flux     flux          0.5-7         kev           2-10          kev                 1    2e20         pl       1.8       0.0          0e00     4.974e-4  2.353e-7        1.0  5.60         3.2
+     flux     flux            2-7         kev           2-10          kev                 1    2e20         pl       1.8       0.0          0e00     4.974e-4  2.353e-7        1.0  5.60         3.2
+     flux     flux          1.2-2         kev           2-10          kev                 1    2e20         pl       1.8       0.0          0e00     4.974e-4  2.353e-7        1.0  5.60         3.2
+     flux     flux        0.5-1.2         kev           2-10          kev                 1    2e20         pl       1.8       0.0          0e00     4.974e-4  2.353e-7        1.0  5.60         3.2
+     flux     flux        0.2-0.5         kev           2-10          kev                 1    2e20         pl       1.8       0.0          0e00     4.974e-4  2.353e-7        1.0  5.60         3.2
+     flux     flux         0.1-10         kev           2-10          kev                 1    2e20         pl       1.8       0.0          0e00     4.974e-4  2.353e-7        1.0  5.60         3.2
+     flux     flux          0.5-7         kev           2-10          kev                 1    2e20         pl       2.0       0.0          0e00     4.974e-4  2.353e-7        1.0  5.60         3.2
+     flux     flux            2-7         kev           2-10          kev                 1    2e20         pl       2.0       0.0          0e00     4.974e-4  2.353e-7        1.0  5.60         3.2
+     flux     flux          1.2-2         kev           2-10          kev                 1    2e20         pl       2.0       0.0          0e00     4.974e-4  2.353e-7        1.0  5.60         3.2
+     flux     flux        0.5-1.2         kev           2-10          kev                 1    2e20         pl       2.0       0.0          0e00     4.974e-4  2.353e-7        1.0  5.60         3.2
+     flux     flux        0.2-0.5         kev           2-10          kev                 1    2e20         pl       2.0       0.0          0e00     4.974e-4  2.353e-7        1.0  5.60         3.2
+     flux     flux         0.1-10         kev           2-10          kev                 1    2e20         pl       2.0       0.0          0e00     4.974e-4  2.353e-7        1.0  5.60         3.2
+     flux     flux        0.2-0.5         kev           2-10          kev                 1    2e20         pl       1.4       0.0          0e00     4.974e-4  2.353e-7        1.0  5.60         3.2
+     flux     flux          0.5-1         kev           2-10          kev                 1    2e20         pl       1.4       0.0          0e00     4.974e-4  2.353e-7        1.0  5.60         3.2
+     flux     flux            1-2         kev           2-10          kev                 1    2e20         pl       1.4       0.0          0e00     4.974e-4  2.353e-7        1.0  5.60         3.2
+     flux     flux          2-4.5         kev           2-10          kev                 1    2e20         pl       1.4       0.0          0e00     4.974e-4  2.353e-7        1.0  5.60         3.2
+     flux     flux         4.5-12         kev           2-10          kev                 1    2e20         pl       1.4       0.0          0e00     4.974e-4  2.353e-7        1.0  5.60         3.2
+     flux     flux         0.2-12         kev           2-10          kev                 1    2e20         pl       1.4       0.0          0e00     4.974e-4  2.353e-7        1.0  5.60         3.2
+     flux     flux        0.5-4.5         kev           2-10          kev                 1    2e20         pl       1.4       0.0          0e00     4.974e-4  2.353e-7        1.0  5.60         3.2
+     flux     flux        0.2-0.5         kev           2-10          kev                 1    2e20         pl       1.8       0.0          0e00     4.974e-4  2.353e-7        1.0  5.60         3.2
+     flux     flux          0.5-1         kev           2-10          kev                 1    2e20         pl       1.8       0.0          0e00     4.974e-4  2.353e-7        1.0  5.60         3.2
+     flux     flux            1-2         kev           2-10          kev                 1    2e20         pl       1.8       0.0          0e00     4.974e-4  2.353e-7        1.0  5.60         3.2
+     flux     flux          2-4.5         kev           2-10          kev                 1    2e20         pl       1.8       0.0          0e00     4.974e-4  2.353e-7        1.0  5.60         3.2
+     flux     flux         4.5-12         kev           2-10          kev                 1    2e20         pl       1.8       0.0          0e00     4.974e-4  2.353e-7        1.0  5.60         3.2
+     flux     flux         0.2-12         kev           2-10          kev                 1    2e20         pl       1.8       0.0          0e00     4.974e-4  2.353e-7        1.0  5.60         3.2
+     flux     flux        0.5-4.5         kev           2-10          kev                 1    2e20         pl       1.8       0.0          0e00     4.974e-4  2.353e-7        1.0  5.60         3.2
+     flux     flux        0.2-0.5         kev           2-10          kev                 1    2e20         pl       2.0       0.0          0e00     4.974e-4  2.353e-7        1.0  5.60         3.2
+     flux     flux          0.5-1         kev           2-10          kev                 1    2e20         pl       2.0       0.0          0e00     4.974e-4  2.353e-7        1.0  5.60         3.2
+     flux     flux            1-2         kev           2-10          kev                 1    2e20         pl       2.0       0.0          0e00     4.974e-4  2.353e-7        1.0  5.60         3.2
+     flux     flux          2-4.5         kev           2-10          kev                 1    2e20         pl       2.0       0.0          0e00     4.974e-4  2.353e-7        1.0  5.60         3.2
+     flux     flux         4.5-12         kev           2-10          kev                 1    2e20         pl       2.0       0.0          0e00     4.974e-4  2.353e-7        1.0  5.60         3.2
+     flux     flux         0.2-12         kev           2-10          kev                 1    2e20         pl       2.0       0.0          0e00     4.974e-4  2.353e-7        1.0  5.60         3.2
+     flux     flux        0.5-4.5         kev           2-10          kev                 1    2e20         pl       2.0       0.0          0e00     4.974e-4  2.353e-7        1.0  5.60         3.2
+     flux     flux            3-8         kev           2-10          kev                 1    2e20         pl       1.4       0.0          0e00     4.974e-4  2.353e-7        1.0  5.60         3.2
+     flux     flux           8-24         kev           2-10          kev                 1    2e20         pl       1.4       0.0          0e00     4.974e-4  2.353e-7        1.0  5.60         3.2
+     flux     flux           3-24         kev           2-10          kev                 1    2e20         pl       1.4       0.0          0e00     4.974e-4  2.353e-7        1.0  5.60         3.2
+     flux     flux            3-8         kev           2-10          kev                 1    2e20         pl       1.8       0.0          0e00     4.974e-4  2.353e-7        1.0  5.60         3.2
+     flux     flux           8-24         kev           2-10          kev                 1    2e20         pl       1.8       0.0          0e00     4.974e-4  2.353e-7        1.0  5.60         3.2
+     flux     flux           3-24         kev           2-10          kev                 1    2e20         pl       1.8       0.0          0e00     4.974e-4  2.353e-7        1.0  5.60         3.2
+     flux     flux            3-8         kev           2-10          kev                 1    2e20         pl       2.0       0.0          0e00     4.974e-4  2.353e-7        1.0  5.60         3.2
+     flux     flux           8-24         kev           2-10          kev                 1    2e20         pl       2.0       0.0          0e00     4.974e-4  2.353e-7        1.0  5.60         3.2
+     flux     flux           3-24         kev           2-10          kev                 1    2e20         pl       2.0       0.0          0e00     4.974e-4  2.353e-7        1.0  5.60         3.2
