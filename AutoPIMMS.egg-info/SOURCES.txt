@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+AutoPIMMS.egg-info/PKG-INFO
+AutoPIMMS.egg-info/SOURCES.txt
+AutoPIMMS.egg-info/dependency_links.txt
+AutoPIMMS.egg-info/top_level.txt
+demo/__init__.py
+demo/outline.py
+source/__init__.py
+source/autopimms.py
+source/fetch_contents.py
+source/flux.py
+source/inout.py
