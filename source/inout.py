@@ -16,6 +16,11 @@ def load_data(path, filename):
 
 def save_data(path, filename, data):
     data.to_csv(path+filename, index=False, sep="\t")
+    
+def save_data_fmtd(path, filein, fileout, flux_list):
+    orig_dat = pd.read_csv(path+filein)
+    orig_dat['pred_flux'] = pd.Series(flux_list)
+    orig_dat.to_csv(path+fileout, index=False, sep="\s\s")
 
 # quick tests
 #data = load_data(filepath,infile)
