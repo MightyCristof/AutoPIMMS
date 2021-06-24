@@ -19,7 +19,7 @@ class Params:
 
 ## load data frame
 def load_data(filename):
-    data = pd.read_csv(filename, delim_whitespace=True)
+    data = pd.read_csv(filename)
     return data
 
 ## ping web form
@@ -52,17 +52,17 @@ def fetch(Params):
     return oflux
 
 ## save output to new file
-def save_data_fmtd(filein, fileout, flux_list):
-    orig_dat = pd.read_csv(filein)
-    orig_dat['pred_flux'] = pd.Series(flux_list)
-    orig_dat.to_csv(fileout, index=False, sep=",")
+def save_data_fmtd(input_data, fetched_data, fileout):
+    ## assign new column to input data and save as .CSV
+    output_data = input_data.assign(output_flux=pd.Series(fetched_data,dtype='float64').values)
+    output_data.to_csv(fileout, index=False, sep=",")
 
 parser = arg.ArgumentParser()
 parser.add_argument('--filein', help='filein, e.g., example_input.txt', type=str, default='')
 parser.add_argument('--fileout', help='fileout, e.g., example_output.txt', type=str, default='autopimms_out.txt')
 args = parser.parse_args()
 
-args.filein = '../demo/input_test.txt'
+#args.filein = '../demo/input_test.txt'
 
 ## check for input
 if args.filein == '':
@@ -84,5 +84,5 @@ for index, row in data.iterrows():
     output_flux.append(fetch(data_row))
 
 ## add output and save to file
-save_data_fmtd(args.filein,args.fileout,output_flux)
+save_data_fmtd(data,output_flux,args.fileout)
 
