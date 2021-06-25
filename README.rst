@@ -10,6 +10,7 @@ AutoPIMMS was created by
 `Christopher Carroll <https://github.com/MightyCristof>`__ during the
 Code/Astro: Software Engineering Workshop for Astronomy in June 2021.
 
+
 Installation
 ------------
 
@@ -22,9 +23,6 @@ Download and install the latest version from `PyPI <https://pypi.org/project/aut
 Installing from source (into the current working directory)::
 
   python setup.py install
-
-(In all cases, add ``--user`` to the ``install`` command to
-install in the current user's home directory.)
 
 
 Documentation
