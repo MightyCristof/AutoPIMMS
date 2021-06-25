@@ -1,4 +1,4 @@
 .vscode
-.autopimms.egg-info
-.build
-.dist
+autopimms.egg-info
+build
+dist
