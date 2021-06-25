@@ -31,16 +31,10 @@ install in the current user's home directory.)
 Documentation
 -------------
 
-The full documentation is available on
-https://mechanicalsoup.readthedocs.io/. You may want to jump directly to
-the `automatically generated API
-documentation <https://mechanicalsoup.readthedocs.io/en/stable/mechanicalsoup.html>`__.
+Coming soon!
 
 Example
 -------
-
-From `<examples/expl_qwant.py>`__, code to get the results from
-a Qwant search:
 
 .. code:: python
 
