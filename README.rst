@@ -20,10 +20,6 @@ Download and install the latest version from `PyPI <https://pypi.org/project/aut
 
   pip install autopimms
 
-Download and install the development version from `GitHub <https://github.com/MechanicalSoup/MechanicalSoup>`__::
-
-  pip install git+https://github.com/MechanicalSoup/MechanicalSoup
-
 Installing from source (into the current working directory)::
 
   python setup.py install
