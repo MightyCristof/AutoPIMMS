@@ -8,7 +8,7 @@ AutoPIMMS was created by
 `Elizabeth Lincoln <https://github.com/ellielinc>`__, 
 `Rosa Everson <https://github.com/rosawe>`__, and 
 `Christopher Carroll <https://github.com/MightyCristof>`__ 
-during the Code/Astro: Software Engineering Workshop for Astronomy 
+during the |Code/Astro: Software Engineering Workshop for Astronomy| 
 in June 2021.
 
 Installation
