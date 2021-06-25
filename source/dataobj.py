@@ -7,11 +7,11 @@ class DataObj:
         self.data = pd.read_csv(filein,header=None)
         self.ncol = len(self.data.columns)
 
-## save output to new file
-def save_data(input_data, fetched_data, fileout):
-    ## assign new column to input data and save as .CSV
-    output_data = input_data.assign(output_flux=pd.Series(fetched_data,dtype='float64').values)
-    output_data.to_csv(fileout, index=False, sep=",")
+    ## save output to new file
+    def save_data(self, fetched_data, fileout):
+        ## assign new column to input data and save as .CSV
+        output_data = self.data.assign(output_flux=pd.Series(fetched_data,dtype='float64').values)
+        output_data.to_csv(fileout, index=False, sep=",")
 
 ## add output and save to file
 #save_data(data,output_flux,args.fileout)

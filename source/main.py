@@ -1,4 +1,5 @@
 import os
+from source.fetch import call_fetch
 import sys
 from dataobj import DataObj, Params
 from PyQt6.QtWidgets import QApplication, QComboBox, QLabel, QPushButton, QFileDialog, QToolTip, QWidget
@@ -8,20 +9,20 @@ class PIMMSGui(QWidget):
 
   ncol = 0 #number of columns found in the file
   
-  labelMap = {"Input Energy Range" : "input_energy",
-                "Input Units" : "input_unit",
-                "Output Energy Range" : "output_energy",
-                "Output Units" : "output_unit",
-                "Source Flux/Count Rate" : "flux_count_ratio",
-                "Galactic NH (cm^-2)" : "gal_nh",
-                "Model of Source" : "model_src",
-                "Photon Index (Power Law)" : "phot_ind",
-                "keV (Blackbody)" : "bb_temp_kev",
-                "kT (Therm. Bremss.)" : "temp_kev",
-                "Solar Abundance (APEC)" : "solar_abd",
-                "log T (APEC)" : "logt",
-                "Redshift" : "redshift",
-                "Intrinsic NH (cm^-2)" : "intrinsic_nh"}
+  labelMap = {"input_energy" : "Input Energy Range*",
+              "input_unit" : "Input Units*",
+              "output_energy" : "Output Energy Range*",
+              "output_unit" : "Output Units*",
+              "flux_count_ratio" : "Source Flux/Count Rate*",
+              "gal_nh" : "Galactic NH (cm^-2)*",
+              "model_src" : "Model of Source*",
+              "phot_ind" : "Photon Index (Power Law*)",
+              "bb_temp_kev" : "keV (Blackbody*)",
+              "temp_kev" : "kT (Therm. Bremss.*)",
+              "solar_abd" : "Solar Abundance (APEC*)",
+              "logt" : "log T (APEC*)",
+              "redshift" : "Redshift",
+              "intrinsic_nh" : "Intrinsic NH (cm^-2)"}
 
   labelNames = list(labelMap.keys())
 
@@ -55,25 +56,25 @@ class PIMMSGui(QWidget):
 
   # Submit job to PIMMS
   def submitJob(self):
-    #do all the stuff here
+
+    newHeader = [''] * self.ncol
 
     for col in self.labelNames:
       # col: nice column name
       # self.labelMap[col]: match to params
       # idx: int of column 
       idx = self.dropdown[col].currentIndex() - 1 # -1 means not select, 0-ncol corresponds to the file column.
-      print(idx)
-      params = Params()
-      # params[self.labelMap[col]] = self.data[idx]
-
-      # newHeaders = zip(self.labelMap[col], idx)
-
-      print(str("Column {} has value {}").format(col, idx))
+      if idx >= 0:
+        newHeader[idx] = col
+      ## right here this tells me the ind needed
     
-    outputContent = "this is the nice output we will save to file"
-    file = open(self.outputFilename, "w")
-    file.write(outputContent)
-    file.close()
+    self.dObj.data.columns = newHeader
+    print(self.dObj.data)
+
+    params = Params()
+    newData = call_fetch(self.dObj.data, params)
+
+    self.dObj.save_data(newData, self.outputFilename)
 
   #########################
   ##### GUI Functions #####
@@ -86,11 +87,9 @@ class PIMMSGui(QWidget):
     labels = {}
     self.dropdown = {}
 
-    dropdowns = {"Input Energy Range" : 0, "Output Energy Range" : 1, "Output Unit" : 2, "Model of Source" : -1 }
-
-    for col in self.labelNames:
+    for col in list(self.labelNames):
       labels[col] = QLabel(self)
-      labels[col].setText(col)
+      labels[col].setText(self.labelMap[col])
       labels[col].move(30, 120 + self.labelNames.index(col) * self.eachHeight)
       labels[col].show()
       self.dropdown[col] = self.getDropdown(30 + self.eachWidth, 110 + self.labelNames.index(col) * self.eachHeight, ncol)
