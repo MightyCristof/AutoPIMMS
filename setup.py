@@ -1,5 +1,5 @@
-import os
 from setuptools import setup, find_packages
+import os, re
 
 # Utility function to read the README file.
 # Used for the long_description.  It's nice, because now 1) we have a top level
@@ -8,21 +8,42 @@ from setuptools import setup, find_packages
 def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
+# auto-updating version
+def get_property(prop, project):
+    result = re.search(r'{}\s*=\s*[\'"]([^\'"]*)[\'"]'.format(prop),
+                       open(project + '/__init__.py').read())
+    return result.group(1)
+
+# parse requirements.txt file for dependency install
+def get_requires():
+    reqs = []
+    for line in open('requirements.txt', 'r').readlines():
+        reqs.append(line)
+    return reqs
+
 setup(
     name = "autopimms",
-    version = "1.0.0",
+    version = get_property('__version__', 'autopimms'),
+    description = ("Upload tool for WebPIMMS designed for multiple queries."),
+    long_description =read('README.md'),
+    url = "https://pypi.org/project/AutoPIMMS/",
+    keywords = 'X-ray Astronomy WebPIMMS',
     author = "Elizabeth G. Lincoln, Rosa W. Everson, Christopher M. Carroll",
     author_email = "lincoln@astro.gsu.edu, rosa@ucsc.edu, c.m.carroll715@gmail.com",
-    description = ("Upload tool for WebPIMMS designed for multiple queries."),
-    license = "MIT",
-    keywords = "AutoPIMMS documentation tutorial",
-    url = "https://pypi.org/project/AutoPIMMS/",
+    license = "MIT",    
     packages = find_packages(),
-    long_description =read('README.md'),
+    include_package_data = True,
+    install_requires=get_requires(),
     classifiers=[
-        "Programming Language :: Python :: 3", 
-        "Development Status :: 3 - Alpha",
-        "Topic :: Utilities",
-        "License :: OSI Approved :: MIT License",
+        # Indicate who your project is intended for
+        'Intended Audience :: Science/Research',
+        'Topic :: Scientific/Engineering :: Astronomy',
+
+        # Pick your license as you wish (should match "license" above)
+        'License :: OSI Approved :: MIT License',
+        
+        # Specify the Python versions you support here. In particular, ensure
+        # that you indicate whether you support Python 2, Python 3 or both.
+        'Programming Language :: Python :: 3', 
     ],
 )
