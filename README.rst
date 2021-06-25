@@ -52,25 +52,6 @@ a Qwant search:
     autopimms.main()
     
 
-Development
------------
-
-|Build Status| |Coverage Status|
-|Requirements Status| |Documentation Status|
-|CII Best Practices|
-|LGTM Alerts|
-|LGTM Grade|
-
-Instructions for building, testing and contributing to MechanicalSoup:
-see `<CONTRIBUTING.rst>`__.
-
-Common problems
----------------
-
-Read the `FAQ
-<https://mechanicalsoup.readthedocs.io/en/stable/faq.html>`__.
-
-
 .. |Latest Version| image:: https://img.shields.io/pypi/v/autopimms.svg
    :target: https://pypi.python.org/pypi/autopimms/
 .. |Supported Versions| image:: https://img.shields.io/pypi/pyversions/autopimms.svg
