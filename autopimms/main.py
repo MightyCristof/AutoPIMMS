@@ -1,7 +1,7 @@
 import os
-from source.fetch import call_fetch
+from .fetch import call_fetch
 import sys
-from dataobj import DataObj, Params
+from .dataobj import DataObj, Params
 from PyQt6.QtWidgets import QApplication, QComboBox, QLabel, QPushButton, QFileDialog, QToolTip, QWidget
 from PyQt6.QtGui import QFont
 

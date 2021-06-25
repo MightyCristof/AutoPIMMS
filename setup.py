@@ -9,14 +9,14 @@ def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
 setup(
-    name = "AutoPIMMS",
+    name = "autopimms",
     version = "1.0.0",
     author = "Elizabeth G. Lincoln, Rosa W. Everson, Christopher M. Carroll",
     author_email = "lincoln@astro.gsu.edu, rosa@ucsc.edu, c.m.carroll715@gmail.com",
     description = ("Upload tool for WebPIMMS designed for multiple queries."),
     license = "MIT",
     keywords = "AutoPIMMS documentation tutorial",
-    url = "http://packages.python.org/autopimms",
+    url = "https://pypi.org/project/AutoPIMMS/",
     packages = find_packages(),
     long_description =read('README.md'),
     classifiers=[

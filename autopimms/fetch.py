@@ -1,5 +1,5 @@
 from os import sep
-from dataobj import DataObj, Params
+from .dataobj import DataObj, Params
 import argparse as arg
 import pandas as pd
 import mechanicalsoup
