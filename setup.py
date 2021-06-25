@@ -10,7 +10,7 @@ def read(fname):
 
 setup(
     name = "AutoPIMMS",
-    version = "0.1.0",
+    version = "1.0.0",
     author = "Elizabeth G. Lincoln, Rosa W. Everson, Christopher M. Carroll",
     author_email = "lincoln@astro.gsu.edu, rosa@ucsc.edu, c.m.carroll715@gmail.com",
     description = ("Upload tool for WebPIMMS designed for multiple queries."),
