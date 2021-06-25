@@ -25,7 +25,7 @@ setup(
     name = "autopimms",
     version = get_property('__version__', 'autopimms'),
     description = ("Upload tool for WebPIMMS designed for multiple queries."),
-    long_description =read('README.md'),
+    long_description = read('README.rst'),
     url = "https://pypi.org/project/AutoPIMMS/",
     keywords = 'X-ray Astronomy WebPIMMS',
     author = "Elizabeth G. Lincoln, Rosa W. Everson, Christopher M. Carroll",
