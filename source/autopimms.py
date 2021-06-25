@@ -81,7 +81,7 @@ def save_data_fmtd(input_data, fetched_data, fileout):
     output_data.to_csv(fileout, index=False, sep=",")
 
 parser = arg.ArgumentParser()
-parser.add_argument('--filein', help='filein, e.g., example_input.csv, type=str, default='')
+parser.add_argument('--filein', help='filein, e.g., example_input.csv', type=str, default='')
 parser.add_argument('--fileout', help='fileout, e.g., example_output.csv', type=str, default='autopimms_out.csv')
 args = parser.parse_args()
 
