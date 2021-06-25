@@ -44,8 +44,8 @@ a Qwant search:
 
 .. code:: python
 
-    """Example usage of AutoPIMMS to get the results from WebPIMMS
-    web form.
+    """
+    Example usage of AutoPIMMS to get the results from WebPIMMS web form.
     """
     
     import autopimms
