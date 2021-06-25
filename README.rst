@@ -1,8 +1,5 @@
+
 AutoPIMMS
-=========
-
-
-Overview
 --------
 
 A Python package for automating calls to WebPIMMS.
